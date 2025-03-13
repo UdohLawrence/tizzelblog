@@ -20,6 +20,7 @@
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="Enter your first name!"
           required
+          value="{{ old('first_name') || '' }}"
         />
         @inputError('first_name')
           <p class="text-red-500 text-sm mt-2">
@@ -36,6 +37,7 @@
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="Enter your surname"
           required
+          value="{{ old('last_name') || '' }}"
         />
         @inputError('last_name')
           <p class="text-red-500 text-sm mt-2">
@@ -52,6 +54,7 @@
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="What should we call you?"
           required
+          value="{{ old('username') || '' }}"
         />
         @inputError('username')
           <p class="text-red-500 text-sm mt-2">
@@ -68,6 +71,7 @@
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="email@example.com"
           required
+          value="{{ old('email') || '' }}"
         />
         @inputError('email')
           <p class="text-red-500 text-sm mt-2">
