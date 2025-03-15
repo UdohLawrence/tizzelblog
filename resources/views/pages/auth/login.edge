@@ -1,0 +1,52 @@
+@layout.auth.auth({title: "Login"})
+  <section class="block max-w-md mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+    <h1 class="text-2xl font-semibold mb-6 text-center">
+      Login
+    </h1>
+    <p class="text-sm text-center mb-6">
+      Not yet a user? <a href="/register" class="text-blue-600 hover:underline">Register</a>
+    </p>
+    <form action="/login" method="post">
+      {{ csrfField() }}
+      <div>
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="email@example.com"
+          required
+          value="{{ old('email') || '' }}"
+        />
+        @inputError('email')
+          <p class="text-red-500 text-sm mt-2">
+            {{ $messages }}
+          </p>
+        @end
+      </div>
+      <div>
+        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="********"
+          required
+        />
+        @inputError('password')
+          <p class="text-red-500 text-sm mt-2">
+            {{ $messages }}
+          </p>
+        @end
+      </div>
+
+      <div>
+        <button
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg mt-4 text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >Submit</button>
+      </div>
+    </form>
+  </section>
+@end
