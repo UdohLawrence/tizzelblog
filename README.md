@@ -69,3 +69,11 @@ Before running the project, ensure you have the following installed:
     `npm install`
 
 3. 
+
+## Contributing
+
+This is a personal project for learning fullstack development. Feel free to fork and adapt it! Suggestions or improvements are welcome via pull requests.
+
+## License
+
+This project is unlicensed and intended for educational purposes. Use it as a starting point for your own projects!
