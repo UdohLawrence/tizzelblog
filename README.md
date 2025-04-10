@@ -1,12 +1,8 @@
 # Tizzel Blog
 
-----
-
 A server-rendered blog website built with **AdonisJS**, **Edge.js**, and **MySQL**. Users can _sign up_, _log in_, _create posts_, and _view posts_ on a responsive interface. This project showcases a fullstack application with server-side rendering, authentication, and a mobile-friendly navbar.
 
 ## Features
-
-----
 
 - **User Authentication**: Sign up, log in, and log out using JWT-based authentication.
 - **Post Management**: Logged-in users can create posts; all users can view posts.
@@ -16,8 +12,6 @@ A server-rendered blog website built with **AdonisJS**, **Edge.js**, and **MySQL
 
 ## Tech Stack
 
-----
-
 - **Backend: AdonisJS v6** - A Node.js framework with MVC architecture.
 - **Templating: Edge.js** - Server-side templating engine for AdonisJS.
 - **Database: MySQL** - Relational database with Lucid ORM integration.
@@ -25,8 +19,6 @@ A server-rendered blog website built with **AdonisJS**, **Edge.js**, and **MySQL
 - **Authentication:** JWT (JSON Web Tokens) via AdonisJS Auth.
 
 ## Prerequisites
-
-----
 
 Before running the project, ensure you have the following installed:
 
@@ -37,38 +29,17 @@ Before running the project, ensure you have the following installed:
 
 ## Project Structure
 
-----
-
-my-first-blog/
-├── app/                 # Core application logic
-│   ├── Controllers/     # HTTP controllers (e.g., AuthController, PostController)
-│   ├── Middleware/      # Custom middleware
-│   ├── Models/          # Lucid ORM models (e.g., User, Post)
-├── config/              # Configuration files
-│   ├── app.js           # App settings
-│   ├── database.js      # Database config
-├── database/            # Database migrations and seeds
-│   ├── migrations/      # Schema migrations
-├── public/              # Static assets
-│   ├── assets/          # CSS, JS, images
-│   │   ├── css/         # Compiled Tailwind CSS
-│   │   └── js/          # Custom JavaScript (e.g., nav.js)
-├── resources/           # Edge.js templates
-│   ├── views/           # Template files
-│   │   ├── auth/        # Auth-related templates (login.edge, signup.edge)
-│   │   ├── posts/       # Post-related templates (index.edge, create.edge)
-│   │   └── layouts/     # Layout templates (main.edge)
-├── start/               # Startup files
-│   ├── routes.js        # Route definitions
-│   └── kernel.js        # Middleware setup
-├── .env                 # Environment variables
-├── ace                  # Adonis CLI tool
-├── package.json         # Dependencies and scripts
-└── README.md            # This file
+--/tizzelblog
+|--/app
+|--/bin
+|--/config
+|--/database
+|--/node_modules
+|--/resources
+|--/start
+|--/tests
 
 ## Installation
-
-----
 
 1. Clone the Repository
 
