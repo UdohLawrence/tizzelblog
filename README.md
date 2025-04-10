@@ -1,8 +1,12 @@
 # Tizzel Blog
 
+----
+
 A server-rendered blog website built with **AdonisJS**, **Edge.js**, and **MySQL**. Users can _sign up_, _log in_, _create posts_, and _view posts_ on a responsive interface. This project showcases a fullstack application with server-side rendering, authentication, and a mobile-friendly navbar.
 
 ## Features
+
+----
 
 - **User Authentication**: Sign up, log in, and log out using JWT-based authentication.
 - **Post Management**: Logged-in users can create posts; all users can view posts.
@@ -12,6 +16,8 @@ A server-rendered blog website built with **AdonisJS**, **Edge.js**, and **MySQL
 
 ## Tech Stack
 
+----
+
 - **Backend: AdonisJS v6** - A Node.js framework with MVC architecture.
 - **Templating: Edge.js** - Server-side templating engine for AdonisJS.
 - **Database: MySQL** - Relational database with Lucid ORM integration.
@@ -19,6 +25,8 @@ A server-rendered blog website built with **AdonisJS**, **Edge.js**, and **MySQL
 - **Authentication:** JWT (JSON Web Tokens) via AdonisJS Auth.
 
 ## Prerequisites
+
+----
 
 Before running the project, ensure you have the following installed:
 
@@ -28,6 +36,8 @@ Before running the project, ensure you have the following installed:
 - Git (optional, for cloning the repository)
 
 ## Project Structure
+
+----
 
 my-first-blog/
 ├── app/                 # Core application logic
@@ -57,6 +67,8 @@ my-first-blog/
 └── README.md            # This file
 
 ## Installation
+
+----
 
 1. Clone the Repository
 
