@@ -29,41 +29,32 @@ Before running the project, ensure you have the following installed:
 
 ## Project Structure
 
-├───app
-
-│   ├───exceptions
-
-│   ├───middleware
-
-│   └───models
-
-├───bin
-
-├───config
-
-├───database
-
-│   └───migrations
-
-├───resources
-
-│   ├───css
-
-│   ├───js
-
-│   └───views
-
-│       ├───components
-
-│       │   └───layout
-
-│       └───pages
-
-│           └───errors
-
-├───start
-
-└───tests
+        tizzelblog/
+        ├── app/                 # Core application logic
+        │   ├── Controllers/     # HTTP controllers (e.g., AuthController, PostController)
+        │   ├── Middleware/      # Custom middleware
+        │   ├── Models/          # Lucid ORM models (e.g., User, Post)
+        ├── config/              # Configuration files
+        │   ├── app.js           # App settings
+        │   ├── database.js      # Database config
+        ├── database/            # Database migrations and seeds
+        │   ├── migrations/      # Schema migrations
+        ├── public/              # Static assets
+        │   ├── assets/          # CSS, JS, images
+        │   │   ├── css/         # Compiled Tailwind CSS
+        │   │   └── js/          # Custom JavaScript (e.g., nav.js)
+        ├── resources/           # Edge.js templates
+        │   ├── views/           # Template files
+        │   │   ├── auth/        # Auth-related templates (login.edge, signup.edge)
+        │   │   ├── posts/       # Post-related templates (index.edge, create.edge)
+        │   │   └── layouts/     # Layout templates (main.edge)
+        ├── start/               # Startup files
+        │   ├── routes.js        # Route definitions
+        │   └── kernel.js        # Middleware setup
+        ├── .env                 # Environment variables
+        ├── ace                  # Adonis CLI tool
+        ├── package.json         # Dependencies and scripts
+        └── README.md            # This file
 
 ## Installation
 
