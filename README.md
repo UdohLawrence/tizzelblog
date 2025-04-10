@@ -60,11 +60,11 @@ my-first-blog/
 
 1. Clone the Repository
 
-git clone <https://github.com/UdohLawrence/tizzelblog>
-cd tizzelblog
+    git clone <https://github.com/UdohLawrence/tizzelblog>
+    cd tizzelblog
 
 2. Install Dependencies
 
-npm install
+    npm install
 
 3. 
