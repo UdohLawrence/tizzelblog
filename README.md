@@ -30,22 +30,39 @@ Before running the project, ensure you have the following installed:
 ## Project Structure
 
 ├───app
+
 │   ├───exceptions
+
 │   ├───middleware
+
 │   └───models
+
 ├───bin
+
 ├───config
+
 ├───database
+
 │   └───migrations
+
 ├───resources
+
 │   ├───css
+
 │   ├───js
+
 │   └───views
+
 │       ├───components
+
 │       │   └───layout
+
 │       └───pages
+
 │           └───errors
+
 ├───start
+
 └───tests
 
 ## Installation
