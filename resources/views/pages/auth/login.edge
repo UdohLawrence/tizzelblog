@@ -1,4 +1,4 @@
-@layout.auth({title: 'Login'})
+@layout.app({title: 'Login'})
 <section class="w-full py-4">
   <div class="max-w-sm p-4 mx-auto">
     <h1 class="text-2xl font-medium text-center">Login</h1>
@@ -8,10 +8,16 @@
       <div class="w-full">
         <label for="email" class="block text-sm font-medium mb-2 dark:text-white">Email</label>
         <input type="email" id="email" name="email" value="{{old('email') || ''}}" class="py-2.5 sm:py-3 px-4 block w-full border border-gray-500 rounded-lg sm:text-sm " placeholder="your-email@email.com">
+        @inputError('email')
+        <p class="text-red-500 text-sm mt-1">{{$messages}}</p>
+        @end
       </div>
       <div class="w-full">
         <label for="password" class="block text-sm font-medium mb-2 dark:text-white">Password</label>
         <input type="password" id="password" name="password" class="py-2.5 sm:py-3 px-4 block w-full border border-gray-500 rounded-lg sm:text-sm " placeholder="Enter a password">
+        @inputError('password')
+        <p class="text-red-500 text-sm mt-1">{{$messages}}</p>
+        @end
       </div>
        <button type="submit" class="w-full bg-sky-600 my-4 text-white py-2.5 sm:py-3 rounded-lg font-medium hover:bg-sky-700 transition duration-200">
         Login
