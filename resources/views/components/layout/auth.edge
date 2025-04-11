@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {{title}} - Tizzel Blog
+    </title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('dumper')
+  </head>
+  <body class="min-h-screen dark:bg-slate-700 dark:text-sky-50">
+    @authNavbar()
+
+    @end
+    {{{await $slots.main()}}}
+    <script src="/resources/js/app.js"></script>
+  </body>
+</html>
