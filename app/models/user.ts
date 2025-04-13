@@ -26,6 +26,9 @@ export default class User extends compose(BaseModel, AuthFinder) {
   declare bio: string | null
 
   @column()
+  declare job_title: string | null
+
+  @column()
   declare profile_picture: string | null
 
   @column()
